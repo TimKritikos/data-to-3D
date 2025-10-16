@@ -288,7 +288,7 @@ case "$TYPE" in
 		;;
 esac
 
-PICTURES_NUM=$(find "$IMAGE_DIR" | grep '\.jpg$\|\.png$' -c )
+PICTURES_NUM=$(find "$IMAGE_DIR" | grep '\.jpg$\|\.png$' -ic )
 
 if [ "$PICTURES_NUM" = 0 ]
 then
